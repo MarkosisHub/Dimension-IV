@@ -390,6 +390,18 @@ html {
   color: #fefefe;
 }
 
+/* Loader */
+#loader {
+  background-image: url('../icons/spinner.gif');
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 10000000000;
+}
+
 /************************************** 
           Header & Banner
 ***************************************/
@@ -422,7 +434,7 @@ html {
   position: fixed;
   top: 0;
   left: 0;
-  opacity: 0.8;
+  opacity: 1;
   width: 100%;
   transition: 0.3s all ease;
   z-index: 100;
