@@ -506,7 +506,7 @@ html {
 
 .banner {
   height: 115vh;
-  padding-top: 20vh;
+  /* padding-top: 20vh; */
 }
 
 .banner a {
@@ -635,7 +635,7 @@ html {
 .life-changing h3 {
   color: #0A275B;
   margin-bottom: 3rem;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .life-changing p {
@@ -1153,6 +1153,7 @@ html {
 .what-we-do h2 {
   margin-bottom: 3rem;
   color: #0A275B;
+  letter-spacing: 2px;
 }
 
 .what-we-do p {
@@ -1180,6 +1181,7 @@ html {
 .approach h3 {
   color: #0A275B;
   margin-bottom: 3rem;
+  letter-spacing: 1px;
 }
 
 .approach p {
@@ -1239,6 +1241,7 @@ html {
 .fees h3 {
   color: #0A275B;
   margin-bottom: 3rem;
+  letter-spacing: 1px;
 }
 
 .fees p {
@@ -1261,7 +1264,7 @@ html {
 }
 
 .banner-team {
-  height: 100vh;
+  height: 85vh;
 }
 
 .banner-team h1 {
@@ -1368,6 +1371,7 @@ html {
 .our-vision h2 {
   margin-bottom: 3rem;
   color: #0A275B;
+  letter-spacing: 2px;
 }
 
 .our-vision p {
@@ -1385,6 +1389,7 @@ html {
   transform: translateX(-50%);
   padding: 2rem;
   border-radius: 30px;
+  letter-spacing: 1px;
 }
 
 .values-mission-wrapper {
@@ -1402,6 +1407,7 @@ html {
 .values-mission h3 {
   color: #0A275B;
   margin-bottom: 3rem;
+  letter-spacing: 1px;
 }
 
 .values-mission p {
@@ -1429,7 +1435,7 @@ html {
 
 .banner-contact h1 {
   color: #fefefe;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-transform: capitalize;
   margin-bottom: 3rem;
 }
@@ -1543,7 +1549,7 @@ html {
 
 /* who we are section */
 .who-we-are-section {
-  padding: 8rem;
+  padding: 8rem 0;
   text-align: center;
 }
 
@@ -1640,6 +1646,12 @@ html {
   .select-wrapper select option {
     font-size: 1.8rem;
   }
+
+  /* our people */
+  .team-button {
+    align-items: flex-start;
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -1664,7 +1676,7 @@ html {
 
   /* contact */
   .contact-header {
-    padding-top: 8vh;
+    /* padding-top: 8vh; */
   }
 
   .contact-us-form {
@@ -1686,7 +1698,7 @@ html {
 
   /* our approach */
   .our-approach-header {
-    padding-top: 8vh;
+    /* padding-top: 8vh; */
   }
 
   .what-we-do {
@@ -1737,15 +1749,15 @@ html {
   }
 
   h2 {
-    font-size: 4.8rem;
+    font-size: 5rem;
   }
 
   h3 {
-    font-size: 3rem;
+    font-size: 4.3rem;
   }
 
   h4 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   /* header */
@@ -1771,14 +1783,16 @@ html {
 
   .banner {
     padding: 0 10rem;
-    padding-top: 20vh;
+    /* height: 1115vh; */
+    /* padding-top: 20vh; */
   }
 
   /* customer review */
-  .customer-review-section h1 {
+  /* .customer-review-section h1 {
     font-size: 5rem;
     margin-right: 0;
-  }
+    letter-spacing: 3px;
+  } */
 
   /* booking */
   /* .select-wrapper {
@@ -1846,12 +1860,13 @@ html {
   /* header */
   .banner {
     padding: 0 5rem;
-    padding-top: 20vh;
+    /* padding-top: 20vh; */
   }
 
   /* financial freedom */
   .financial-freedom-wrapper h1 {
     font-size: 5rem;
+    letter-spacing: 3px;
   }
 
   /* afa & tpb */
@@ -1970,7 +1985,11 @@ html {
 
   .banner {
     padding: 0 3rem;
-    padding-top: 20vh;
+    /* padding-top: 20vh; */
+  }
+  /* values */
+  .banner-values-mission p {
+    width: 100%;
   }
 
   /* help */
@@ -1982,6 +2001,11 @@ html {
   /* financial freedom */
   .financial-freedom-wrapper h1 {
     font-size: 4rem;
+    letter-spacing: 3px;
+  }
+
+  .financial-freedom-wrapper p {
+    width: 100%;
   }
 
   /* contact */
@@ -2002,8 +2026,8 @@ html {
   /* our team */
   .banner-team p {
     font-size: 1.8rem;
+    width: 100%;
   }
-
   /* booking */
   .select-wrapper {
     width: 95%;
