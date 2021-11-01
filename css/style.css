@@ -91,7 +91,7 @@ html {
   margin: 0;
   width: 4.2rem;
   height: 4.2rem;
-  background: #0A275B;
+  background: #0a275b;
 }
 
 .button.learn-more .circle .icon {
@@ -180,7 +180,7 @@ html {
   top: 0;
   bottom: 0;
   margin: auto;
-  background: #0A275B;
+  background: #0a275b;
 }
 
 .button.go .circle .icon.arrow {
@@ -198,8 +198,8 @@ html {
   right: 0.0625rem;
   width: 0.625rem;
   height: 0.625rem;
-  border-top: 0.125rem solid #0A275B;
-  border-right: 0.125rem solid #0A275B;
+  border-top: 0.125rem solid #0a275b;
+  border-right: 0.125rem solid #0a275b;
   transform: rotate(45deg);
 }
 
@@ -224,12 +224,12 @@ html {
 }
 
 .button.go:hover .circle .icon.arrow {
-  background: #0A275B;
+  background: #0a275b;
   transform: translate(1rem, 0);
 }
 
 .button.go:hover .button-text {
-  color: #0A275B;
+  color: #0a275b;
 }
 
 .button.book {
@@ -247,7 +247,7 @@ html {
   margin: 0;
   width: 5rem;
   height: 5rem;
-  background: #0A275B;
+  background: #0a275b;
   border-radius: 50px;
 }
 
@@ -289,7 +289,7 @@ html {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #0A275B;
+  color: #0a275b;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -326,7 +326,7 @@ html {
   margin: 0;
   width: 4.3rem;
   height: 4.3rem;
-  background: #0A275B;
+  background: #0a275b;
   border-radius: 50px;
 }
 
@@ -368,7 +368,7 @@ html {
   bottom: 0;
   padding: 0.75rem 0;
   margin: 0 0 0 1.85rem;
-  color: #0A275B;
+  color: #0a275b;
   font-weight: 700;
   line-height: 1.6;
   text-align: center;
@@ -392,7 +392,7 @@ html {
 
 /* Loader */
 #loader {
-  background-image: url('../icons/spinner.gif');
+  background-image: url("../icons/spinner.gif");
   background-repeat: no-repeat;
   background-position: center center;
   height: 100vh;
@@ -410,11 +410,7 @@ html {
 }
 
 .home-header {
-  background-image: linear-gradient(
-      to right,
-      transparent,
-      rgba(0, 0, 0, 0.5)
-    ),
+  background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5)),
     url("../images/home-banner.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -425,7 +421,7 @@ html {
 
 .header-section .logo {
   width: 35rem;
-  border-right: 2px solid #0A275B;
+  border-right: 2px solid #0a275b;
   padding-right: 8rem;
 }
 
@@ -449,16 +445,25 @@ html {
   cursor: pointer;
 }
 
-#navbarDropdown {
+.arrow {
+  font-size: 1.5rem;
+  position: relative;
+  top: -5px;
+}
+
+#navbarDropdown1,
+#navbarDropdown2 {
   color: #fff;
 }
 
 .header-section .nav-item .nav-link:hover,
-#navbarDropdown.nav-link.dropdown-toggle:hover {
+#navbarDropdown1.nav-link.dropdown-toggle:hover,
+#navbarDropdown2.nav-link.dropdown-toggle:hover {
   color: #e4e4e5;
 }
 
-#navbarDropdown.nav-link.dropdown-toggle {
+#navbarDropdown1.nav-link.dropdown-toggle,
+#navbarDropdown2.nav-link.dropdown-toggle {
   color: #fff;
 }
 
@@ -467,18 +472,19 @@ html {
   color: #e4e4e5;
 }
 
-.header-section .nav-item .nav-link.nav-color {
-  color: #000;
+.nav-color {
+  color: red;
 }
 
-#navbarDropdown.nav-color.dropsown-toggle:link {
+#navbarDropdown1.nav-color.dropsown-toggle:link,
+#navbarDropdown2.nav-color.dropsown-toggle:link {
   color: #000;
 }
 
 .border-wrapper {
-  border-top: 2px solid #0A275B;
-  border-right: 2px solid #0A275B;
-  border-bottom: 2px solid #0A275B;
+  border-top: 2px solid #0a275b;
+  border-right: 2px solid #0a275b;
+  border-bottom: 2px solid #0a275b;
   padding: 5rem;
 }
 
@@ -543,7 +549,7 @@ html {
 }
 
 .help-content {
-  background-color: #0A275B;
+  background-color: #0a275b;
   color: #fefefe;
   padding: 8rem 0;
 }
@@ -574,6 +580,32 @@ html {
 .help-content span {
   font-size: 1.8rem;
   margin-right: 0.5rem;
+}
+
+.help-content .services-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  width: 50%;
+  margin: auto;
+}
+
+.help-content .services-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.help-content .services-list ul li a {
+  text-decoration: none;
+  display: block;
+  font-size: 1.8rem;
+  color: #fefefe;
+  padding: 5px 0;
+  transition: 0.3s all ease;
+}
+
+.help-content .services-list ul li a:hover {
+  color: #84aaf1;
 }
 
 /************************************** 
@@ -633,14 +665,14 @@ html {
 }
 
 .life-changing h3 {
-  color: #0A275B;
+  color: #0a275b;
   margin-bottom: 3rem;
   letter-spacing: 1px;
 }
 
 .life-changing p {
   font-size: 1.8rem;
-  color: #0A275B;
+  color: #0a275b;
 }
 /* 
 .box {
@@ -665,12 +697,13 @@ html {
 
 .afa-tpb-wrapper {
   padding: 8rem 0;
-  border-top: 3px solid #0A275B;
-  border-bottom: 3px solid #0A275B;
+  border-top: 3px solid #0a275b;
+  border-bottom: 3px solid #0a275b;
+  text-align: center;
 }
 
 .afa-tpb-wrapper h3 {
-  color: #0A275B;
+  color: #0a275b;
   letter-spacing: 1px;
 }
 
@@ -705,7 +738,7 @@ html {
 .customer-img {
   width: 10rem;
   height: 10rem;
-  background: #0A275B;
+  background: #0a275b;
   border-radius: 50%;
 }
 
@@ -715,7 +748,7 @@ html {
 }
 
 .customer-review-section h2 {
-  color: #0A275B;
+  color: #0a275b;
   letter-spacing: 2px;
 }
 
@@ -762,7 +795,7 @@ html {
 }
 
 .get-in-touch-wrapper h2 {
-  color: #0A275B;
+  color: #0a275b;
   text-align: center;
   margin-bottom: 3rem;
   letter-spacing: 2px;
@@ -774,7 +807,7 @@ html {
 
 .get-in-touch-form label {
   font-size: 1.8rem;
-  color: #0A275B;
+  color: #0a275b;
 }
 
 .select-wrapper {
@@ -785,7 +818,7 @@ html {
   padding: 1rem 2.5rem;
   margin: 0 auto;
   border-radius: 2rem;
-  color: #0A275B;
+  color: #0a275b;
   text-align: center;
 }
 
@@ -794,7 +827,7 @@ html {
   background-color: #dfdfdf;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #0A275B;
+  color: #0a275b;
   cursor: pointer;
   padding: 1rem 1.5rem;
   max-width: 20%;
@@ -819,7 +852,7 @@ html {
   width: 20rem;
   margin: 0 auto;
   border: none;
-  background-color: #0A275B;
+  background-color: #0a275b;
   color: #fff;
   padding: 1rem 0;
   font-size: 3rem;
@@ -854,7 +887,7 @@ html {
 .location i {
   margin-right: 1rem;
   font-size: 2.5rem;
-  color: #0A275B;
+  color: #0a275b;
 }
 
 .location span {
@@ -872,7 +905,7 @@ html {
 }
 
 .footer-top-wrapper h5 {
-  color: #0A275B;
+  color: #0a275b;
   font-size: 2rem;
 }
 
@@ -890,7 +923,7 @@ html {
   padding: 0.3rem 1rem;
   font-size: 1.6rem;
   text-decoration: none;
-  color: #0A275B;
+  color: #0a275b;
   font-style: normal;
   transition: 0.3s all ease;
   display: inline-block;
@@ -957,7 +990,7 @@ html {
 
 .service {
   padding: 3rem;
-  border-radius: 3rem;
+  /* border-radius: 3rem; */
 }
 
 .left {
@@ -971,28 +1004,28 @@ html {
 }
 
 .service-blue {
-  background-color: #0A275B;
+  background-color: #0a275b;
 }
 
 .service-light {
   background-color: #e5e5e5;
 }
 
-.service h4 {
+.service h3 {
   padding: 0.5rem 0;
-  font-size: 2.5rem;
   padding-left: 2rem;
   margin-bottom: 2rem;
+  letter-spacing: 1px;
 }
 
-.service h4.blue {
+.service h3.blue {
   color: #e5e5e5;
   border-left: 1rem solid #e5e5e5;
 }
 
-.service h4.light {
-  color: #0A275B;
-  border-left: 1rem solid #0A275B;
+.service h3.light {
+  color: #0a275b;
+  border-left: 1rem solid #0a275b;
 }
 
 .service a,
@@ -1008,7 +1041,7 @@ html {
 .service a.blue,
 .service-center a {
   background-color: #e5e5e5;
-  color: #0A275B;
+  color: #0a275b;
 }
 
 .service a.blue:hover,
@@ -1017,7 +1050,7 @@ html {
 }
 
 .service a.light:hover {
-  box-shadow: 0px 15px 10px -15px #0A275B;
+  box-shadow: 0px 15px 10px -15px #0a275b;
 }
 
 .service a:hover,
@@ -1026,7 +1059,7 @@ html {
 }
 
 .service a.light {
-  background-color: #0A275B;
+  background-color: #0a275b;
   color: #e5e5e5;
 }
 
@@ -1040,14 +1073,14 @@ html {
 }
 
 .service p.light {
-  color: #0A275B;
+  color: #0a275b;
 }
 
 .service-center {
   text-align: center;
   padding: 3rem;
   border-radius: 3rem;
-  background-color: #0A275B;
+  background-color: #0a275b;
   width: 50%;
   margin: auto;
 }
@@ -1071,7 +1104,7 @@ html {
 }
 
 .service-content-wrapper h2 {
-  color: #0A275B;
+  color: #0a275b;
   letter-spacing: 2px;
   margin-bottom: 3rem;
   border-bottom: 2px solid #747474;
@@ -1085,7 +1118,7 @@ html {
 
 .service-content h4 {
   margin-bottom: 2rem;
-  color: #0A275B;
+  color: #0a275b;
 }
 
 .service-content p {
@@ -1152,13 +1185,13 @@ html {
 
 .what-we-do h2 {
   margin-bottom: 3rem;
-  color: #0A275B;
+  color: #0a275b;
   letter-spacing: 2px;
 }
 
 .what-we-do p {
   font-size: 2.1rem;
-  color: #0A275B;
+  color: #0a275b;
   margin-bottom: 2.5rem;
 }
 
@@ -1179,19 +1212,19 @@ html {
 }
 
 .approach h3 {
-  color: #0A275B;
+  color: #0a275b;
   margin-bottom: 3rem;
   letter-spacing: 1px;
 }
 
 .approach p {
   font-size: 1.8rem;
-  color: #0A275B;
+  color: #0a275b;
 }
 
 .approach ul {
   font-size: 1.8rem;
-  color: #0A275B;
+  color: #0a275b;
 }
 
 /* our fees  */
@@ -1239,14 +1272,14 @@ html {
 }
 
 .fees h3 {
-  color: #0A275B;
+  color: #0a275b;
   margin-bottom: 3rem;
   letter-spacing: 1px;
 }
 
 .fees p {
   font-size: 1.8rem;
-  color: #0A275B;
+  color: #0a275b;
 }
 
 /* our team */
@@ -1264,7 +1297,7 @@ html {
 }
 
 .banner-team {
-  height: 85vh;
+  height: 100vh;
 }
 
 .banner-team h1 {
@@ -1308,7 +1341,7 @@ html {
 }
 
 .our-team-wrapper .designation h3 {
-  color: #0A275B;
+  color: #0a275b;
   font-size: 3rem;
   text-align: center;
   margin-bottom: 1.5rem;
@@ -1320,13 +1353,13 @@ html {
   color: #6b6868;
   font-size: 2rem;
   text-align: center;
-  border-bottom: 3px solid #0A275B;
+  border-bottom: 3px solid #0a275b;
   padding-bottom: 1.5rem;
 }
 
 .our-team-wrapper .designation p {
   font-size: 1.6rem;
-  color: #0A275B;
+  color: #0a275b;
   margin-top: 3rem;
 }
 
@@ -1370,20 +1403,20 @@ html {
 
 .our-vision h2 {
   margin-bottom: 3rem;
-  color: #0A275B;
+  color: #0a275b;
   letter-spacing: 2px;
 }
 
 .our-vision p {
   font-size: 2.1rem;
-  color: #0A275B;
+  color: #0a275b;
   margin-bottom: 2.5rem;
 }
 
 .our-vision h3 {
   position: absolute;
   bottom: -5rem;
-  background-color: #0A275B;
+  background-color: #0a275b;
   color: #efecf4;
   left: 50%;
   transform: translateX(-50%);
@@ -1405,14 +1438,14 @@ html {
 }
 
 .values-mission h3 {
-  color: #0A275B;
+  color: #0a275b;
   margin-bottom: 3rem;
   letter-spacing: 1px;
 }
 
 .values-mission p {
   font-size: 1.8rem;
-  color: #0A275B;
+  color: #0a275b;
 }
 
 /* contact us */
@@ -1456,7 +1489,7 @@ html {
 
 .contact-us-form .book-meeting-form label {
   font-size: 1.8rem;
-  color: #0A275B;
+  color: #0a275b;
 }
 
 .contact-us-form .book-meeting-form textarea,
@@ -1473,7 +1506,7 @@ html {
   width: 20rem;
   margin: 0 auto;
   border: none;
-  background-color: #0A275B;
+  background-color: #0a275b;
   color: #fff;
   padding: 1rem 0;
   font-size: 3rem;
@@ -1554,7 +1587,7 @@ html {
 }
 
 .who-we-are-wrapper h4 {
-  color: #0A275B;
+  color: #0a275b;
   margin-bottom: 2rem;
 }
 
@@ -1570,16 +1603,15 @@ html {
 }
 
 .who-we-are-wrapper .who-we-are-card {
-  min-height: 40rem;
   padding: 1rem;
 }
 
 .who-we-are-wrapper a {
   text-decoration: none;
   font-size: 1.8rem;
-  background-color: #0A275B;
+  background-color: #0a275b;
   color: #f5f5f5;
-  padding: .8rem 2rem;
+  padding: 0.8rem 2rem;
 }
 
 .who-we-are-wrapper a:hover {
@@ -1616,18 +1648,18 @@ html {
 @keyframes slidein {
   from {
     transform: translate3d(0, 0, 0);
- }
+  }
   to {
     transform: translate3d(-100%, 0, 0);
- }
+  }
 }
 @keyframes fade-in {
   0% {
     opacity: 0;
- }
+  }
   100% {
     opacity: 1;
- }
+  }
 }
 
 /***********************************
@@ -1645,6 +1677,12 @@ html {
 
   .select-wrapper select option {
     font-size: 1.8rem;
+  }
+
+  /* services */
+  .service {
+    padding: 3rem;
+    min-height: 27rem;
   }
 
   /* our people */
@@ -1767,7 +1805,7 @@ html {
   }
 
   .navbar-nav {
-    background-color: #0A275B;
+    background-color: #0a275b;
     width: 100%;
     opacity: 0.9;
     padding: 1rem;
@@ -1785,6 +1823,13 @@ html {
     padding: 0 10rem;
     /* height: 1115vh; */
     /* padding-top: 20vh; */
+  }
+
+  /* help */
+  .help-content .services-list {
+    display: block;
+    width: 40%;
+    margin: auto;
   }
 
   /* customer review */
@@ -1834,6 +1879,12 @@ html {
   .right {
     margin: 0;
     margin-bottom: 3rem;
+  }
+
+  /* services */
+  .service {
+    padding: 3rem;
+    min-height: 23rem;
   }
 
   /* our team */
@@ -1996,6 +2047,13 @@ html {
   .help-content {
     margin: 0 5rem;
     padding: 4rem 0;
+  }
+
+  /* help */
+  .help-content .services-list {
+    display: block;
+    width: 60%;
+    margin: auto;
   }
 
   /* financial freedom */

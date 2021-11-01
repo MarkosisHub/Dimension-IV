@@ -3,7 +3,8 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   const myNav = document.getElementById('my-nav')
   const logo = document.getElementById('logo')
-  const navbarDropdown = document.getElementById('navbarDropdown')
+  // const navbarDropdown1 = document.getElementById('navbarDropdown1')
+  // const navbarDropdown2 = document.getElementById('navbarDropdown2')
   const navLink = document.querySelectorAll('.nav-link')
 
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -11,14 +12,15 @@ function scrollFunction() {
     myNav.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
     myNav.style.borderBottom = "1px solid #1B275B";
     myNav.style.fontSize = '14px'
-    myNav.style.color = '#000'
+    myNav.style.color = '#fff'
 
-    navbarDropdown.style.color = '#000'
+    // navbarDropdown1.style.color = '#000'
+    // navbarDropdown2.style.color = '#000'
 
     logo.style.width = "33rem";
 
     navLink.forEach(link => {
-      link.classList.add('nav-color')
+      link.style.color = "#000"
     })
   } else {
     myNav.style.backgroundColor = "transparent";
@@ -27,10 +29,12 @@ function scrollFunction() {
 
     logo.style.width = "35rem";
 
-    navbarDropdown.style.color = '#fff'
+    // navbarDropdown1.style.color = '#fff'
+    // navbarDropdown2.style.color = '#fff'
+
 
     navLink.forEach(link => {
-      link.classList.remove('nav-color')
+      link.style.color = "#fff"
     })
   }
 }

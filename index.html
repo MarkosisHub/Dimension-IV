@@ -9,7 +9,7 @@
       content="Are you looking to grow your wealth and take control of your future? Take the first step with tailored advice that helps you reach your goals."
     />
     <meta name="keywords" content="" />
-    <link rel="icon" type="image/png" sizes="16x16"  href="icons/favicon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -32,9 +32,7 @@
   </head>
   <body>
     <!-- Loader -->
-    <section id="loader">
-      
-    </section>
+    <section id="loader"></section>
 
     <!-- header & banner section -->
     <header class="header-section home-header">
@@ -60,20 +58,23 @@
                 <a class="nav-link active" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="who-we-are.html">Who we are</a>
+                <a class="nav-link" href="who-we-are.html">Who we are  <span class="arrow"><i class="fas fa-sort-down"></i></span></a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item">
+                <a class="nav-link" href="who-we-are.html">What we do  <span class="arrow"><i class="fas fa-sort-down"></i></span></a>
+              </li>
+              <!-- <li class="nav-item dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
-                  id="navbarDropdown"
+                  id="navbarDropdown1"
                   role="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
                   What we do
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                   <li>
                     <a class="dropdown-item" href="service1.html"
                       >Wealth creation</a
@@ -88,22 +89,32 @@
                     <a class="dropdown-item" href="service3.html">Investing</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="service4.html">Superannuation</a>
+                    <a class="dropdown-item" href="service4.html"
+                      >Superannuation</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="service5.html">Personal insurance</a>
+                    <a class="dropdown-item" href="service5.html"
+                      >Personal insurance</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="service6.html">Tax planning</a>
+                    <a class="dropdown-item" href="service6.html"
+                      >Tax planning</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="service7.html">Retirement planning</a>
+                    <a class="dropdown-item" href="service7.html"
+                      >Retirement planning</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="service8.html">Aged care advice</a>
+                    <a class="dropdown-item" href="service8.html"
+                      >Aged care advice</a
+                    >
                   </li>
                 </ul>
-              </li>
+              </li> -->
               <li class="nav-item">
                 <a class="nav-link" href="contact.html">Contact</a>
               </li>
@@ -113,7 +124,13 @@
       </nav>
       <div class="container">
         <div
-          class="row banner d-flex align-items-center align-items-lg-end  justify-content-center"
+          class="
+            row
+            banner
+            d-flex
+            align-items-center align-items-lg-end
+            justify-content-center
+          "
         >
           <div class="col-md-6"></div>
           <div class="col-lg-6 text-center text-lg-start ps-5">
@@ -138,8 +155,9 @@
     <section class="help-section">
       <div class="container">
         <div class="help-content">
-          <h2>Discover how we can help?</h2>
-          <div class="d-lg-flex d-block justify-content-center text-center">
+          <h2>Discover how we can help</h2>
+
+          <!-- <div class="d-lg-flex d-block justify-content-center text-center">
             <div class="mb-2">
               <span>I am</span>
             </div>
@@ -162,13 +180,58 @@
                 aria-labelledby="dropdownMenuButton1"
               ></ul>
             </div>
-            <!-- <a class="button mt-1" id="go" href="service1.html">Go</a> -->
             <a href="#" class="button go" id="go" style="pointer-events: none">
               <span class="circle" aria-hidden="true">
                 <span class="icon arrow"></span>
               </span>
               <span class="button-text">Go</span>
             </a>
+          </div> -->
+          <!-- <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+              <a href="service1.html">Wealth creation advice</a>
+            </li>
+            <li class="list-group-item">
+              <a href="service2.html">Money management</a>
+            </li>
+          </ul>
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+              <a href="service3.html">Investing</a>
+            </li>
+            <li class="list-group-item">
+              <a href="service4.html">Superannuation</a>
+            </li>
+          </ul>
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+              <a href="service5.html">Personal insurance</a>
+            </li>
+            <li class="list-group-item">
+              <a href="service6.html">Tax planning</a>
+            </li>
+          </ul>
+          <ul class="list-group list-group-horizontal">
+            <li class="list-group-item">
+              <a href="service7.html">Retirement planning</a>
+            </li>
+            <li class="list-group-item">
+              <a href="service8.html">Aged care advice</a>
+            </li>
+          </ul> -->
+          <div class="services-list">
+            <ul>
+              <li><a href="service1.html">Wealth creation advice</a></li>
+              <li><a href="service2.html">Money management</a></li>
+              <li><a href="service3.html">Investing</a></li>
+              <li><a href="service4.html">Superannuation</a></li>
+            </ul>
+            <ul>
+              <li><a href="service5.html">Personal insurance</a></li>
+              <li><a href="service6.html">Tax planning</a></li>
+              <li><a href="service7.html">Retirement planning</a></li>
+              <li><a href="service8.html">Aged care advice</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -544,7 +607,13 @@
           </div>
           <div class="col-md-6 mb-5">
             <label for="phone" class="form-label">Phone Number</label>
-            <input type="text" name="phone" class="form-control" id="phone" required />
+            <input
+              type="text"
+              name="phone"
+              class="form-control"
+              id="phone"
+              required
+            />
           </div>
           <div class="col-md-6 mb-5">
             <label for="email" class="form-label">Email</label>
@@ -553,7 +622,7 @@
           <div class="mb-5 col-12">
             <textarea
               name="message"
-              placeholder="Type your Message here"
+              placeholder="Type your message here"
               class="form-control"
               rows="3"
               required
@@ -580,7 +649,7 @@
                   <div class="location">
                     <div class="d-flex justify-content-left mb-4">
                       <i class="fas fa-phone"></i>
-                      <span>123456789</span>
+                      <span>1300 258 078</span>
                     </div>
                     <div class="d-flex justify-content-left">
                       <i class="fas fa-map-marker-alt"></i>
@@ -624,7 +693,7 @@
               <div class="text-muted text-center">
                 <span
                   >Dimension IV Wealth Management Pty Ltd (ABN 12 159 999 238)
-                  is an Authorised Representatives of Synchron, AFS License No.
+                  is an Authorised Representative of Synchron, AFS Licence No.
                   243313.</span
                 >
                 <br />
